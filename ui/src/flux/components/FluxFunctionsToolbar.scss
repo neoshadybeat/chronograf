@@ -1,0 +1,60 @@
+.flux-functions-toolbar {
+  width: 200px;
+  height: 100%;
+  background-color: $g3-castle;
+}
+
+.flux-functions-toolbar--category {
+  dt, dd {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+  
+  dt {
+    background-color: $g6-smoke;
+    font-weight: 600;
+  }
+
+  dd {
+    font-family: "RobotoMono", monospace;
+  }
+
+  dd:hover, dd:active {
+    background-color: $g4-onyx;
+    color: $c-laser;
+  }
+}
+
+.flux-functions-toolbar--function {
+  position: relative;
+}
+
+
+.flux-functions-toolbar--tooltip {
+  border: $ix-border solid $c-pool;
+  border-radius: $radius;
+  position: absolute;
+  width: 300px;
+  transform: translateY(-50%);
+  margin-top: 15px;
+  margin-left: -308px;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  background-color: $g1-raven;
+  z-index: 300;
+  padding: 10px;
+}
+
+.flux-functions-toolbar--tooltip:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: -7px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid $c-pool;
+}
